@@ -1,5 +1,6 @@
 import assets from "../assets/assets";
 import Title from "./Title";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
 
@@ -30,6 +31,12 @@ const Services = () => {
         <img src={assets.bgImage2} className="absolute -top-110 -left-70 -z-1 daik-hidden" alt="" />
 
         <Title title="¿Cómo podemos ayudar?" des="Desde la estrategia hasta la ejecución, elaboramos una soluciones digitales que mueven su negocio Forwad" />
+
+        <div className="flex flex-col md:grid grid-cols-2">
+            {servicesData.map((service, index) => (
+                <ServiceCard key={index} service={service} index={index} />
+            ))}
+        </div>
     </div>
   )
 }
