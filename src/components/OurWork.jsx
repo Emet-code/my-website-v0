@@ -50,7 +50,7 @@ const OurWork = () => {
     viewport={{once: true}}
     transition={{staggerChildren: 0.2}}
     
-    id="our-work" className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
+    id="work" className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
         <Title 
             title="Our Latest Work at Emet Tech Solutions." 
             des="From strategy to execution, we craft digital solutions that drive your business forward." 
