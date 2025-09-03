@@ -4,23 +4,44 @@ import Title from "./Title"
 
 const OurWork = () => {
 
-    const wordData = [
+    
+    const workData = [
         {
-            title: 'Marketing de aplicaciones móviles',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            image: assets.work_mobile_app      
+          title: "Health and Wellness Technology Company",
+          description: "Designed and developed a modern website to elevate the digital presence and showcase the innovative services of a leading health and wellness technology company.",
+          image: "/anywherehealing.png"
+        },
+        {   
+          title: "Cyber Security Firm",
+          description: "Created a compelling brand website for a Canadian-based cyber security firm, enhancing their credibility and strengthening their online identity.",
+          image: "/0day.png"
         },
         {
-            title: 'Gestión del tablero',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            image: assets.work_dashboard_management      
+          title: "Car Rental Application",
+          description: "Built an intuitive car rental application that streamlines the booking process and automates operations for a seamless user experience.",
+          image: "/stryde.png"
         },
         {
-            title: 'Promoción de la aplicación de fitness',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            image: assets.work_fitness_app      
+          title: "Veterinary Clinic",
+          description: "Developed an engaging website for a veterinary clinic, improving client interaction and driving greater customer engagement.",
+          image: "/polaris.png"
         },
-    ]
+        {
+          title: "Drone Logistics Company",
+          description: "Engineered a comprehensive full-stack dashboard for a drone logistics company, empowering them to efficiently manage operations and customer relationships.",
+          image: "/flysmart.png"
+        },
+        {
+          title: "Tech Startup",
+          description: "Launched a dynamic brand website for a tech startup, amplifying their market presence and supporting their growth ambitions.",
+          image: "/reispar.png"
+        },
+        {
+          title: "Social Media Application",
+          description: "Created a feature-rich social media application designed to foster community and streamline user interactions.",
+          image: "/hira.png"
+        },
+      ]
 
   return (
     <motion.div 
@@ -30,10 +51,13 @@ const OurWork = () => {
     transition={{staggerChildren: 0.2}}
     
     id="our-work" className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
-        <Title title="Nuestro último trabajo." des="Desde la estrategia hasta la ejecución, elaboramos soluciones digitales que avanzan su negocio." />
+        <Title 
+            title="Our Latest Work at Emet Tech Solutions." 
+            des="From strategy to execution, we craft digital solutions that drive your business forward." 
+        />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
-            {wordData.map((work, index) => (
+            {workData.map((work, index) => (
                 <motion.div 
                 initial={{y: 30, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
@@ -41,7 +65,7 @@ const OurWork = () => {
                 viewport={{once: true}}
 
                 key={index} className="hover:scale-102 duration-500 transition-all cursor-pointer" >
-                    <img src={work.image} className="w-full rounded-xl" alt="" />
+                    <img src={work.image} className="w-full rounded-xl h-[154px] object-cover" alt="" />
                     <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
                     <p className="text-sm opacity-60 w-5/6">{work.description}</p>
                 </motion.div>

@@ -7,24 +7,24 @@ const Services = () => {
 
     const servicesData = [
         {
-            title: 'Publicidad',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            icon: assets.ads_icon      
+            title: 'Website Development',
+            description: 'Custom, high-performance websites built with the latest technologies to help your business stand out online.',
+            icon: assets.ads_icon // Consider replacing with a more relevant icon if available
         },
         {
-            title: 'Marketing de contenidos',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            icon: assets.marketing_icon      
+            title: 'Mobile App Development',
+            description: 'End-to-end mobile app solutions for iOS and Android, designed for seamless user experiences and robust performance.',
+            icon: assets.marketing_icon // Consider replacing with a more relevant icon if available
         },
         {
-            title: 'Redacción de contenido',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            icon: assets.content_icon      
+            title: 'UI/UX Design',
+            description: 'Intuitive and engaging user interfaces crafted to maximize usability and delight your customers.',
+            icon: assets.content_icon // Consider replacing with a more relevant icon if available
         },
         {
-            title: 'Redes sociales',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-            icon: assets.social_icon      
+            title: 'AI Agents',
+            description: 'Intelligent AI-powered agents to automate tasks, enhance customer support, and drive innovation in your business.',
+            icon: assets.social_icon // Consider replacing with a more relevant icon if available
         }
     ]
   return (
@@ -36,7 +36,7 @@ const Services = () => {
     id="services" className="relative  flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
         <img src={assets.bgImage2} className="absolute -top-110 -left-70 -z-1 daik-hidden" alt="" />
 
-        <Title title="¿Cómo podemos ayudar?" des="Desde la estrategia hasta la ejecución, elaboramos una soluciones digitales que mueven su negocio Forwad" />
+        <Title title="How can we help?" des="From strategy to execution, we deliver authentic digital solutions that drive your business forward" />
 
         <div className="flex flex-col md:grid grid-cols-2">
             {servicesData.map((service, index) => (

@@ -9,6 +9,8 @@ import zoom_logo from './zoom_logo.png'
 import rakuten_logo from './rakuten_logo.png'
 import coinbase_logo from './coinbase_logo.png'
 import ads_icon from './ads_icon.svg'
+import web_icon from './web_icon.svg'
+import mobile_icon from './mobile_icon.svg'
 import content_icon from './content_icon.svg'
 import marketing_icon from './marketing_icon.svg'
 import social_icon from './social_icon.svg'
@@ -48,6 +50,8 @@ const assets = {
   bgImage2,
   hero_img,
   ads_icon,
+  web_icon,
+  mobile_icon,
   content_icon,
   marketing_icon,
   social_icon,

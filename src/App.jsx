@@ -47,10 +47,10 @@ const App = () => {
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <Services />
       <OurWork />
-      <Teams />
+      {/* <Teams /> */}
       <ContacUs />
       <Footer theme={theme} />
 
