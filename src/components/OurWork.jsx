@@ -9,12 +9,14 @@ const OurWork = () => {
         {
           title: "Health and Wellness Technology Company",
           description: "Designed and developed a modern website to elevate the digital presence and showcase the innovative services of a leading health and wellness technology company.",
-          image: "/anywherehealing.png"
+          image: "/anywherehealing.png",
+          link: "https://anywherehealing.com/"
         },
         {   
           title: "Cyber Security Firm",
           description: "Created a compelling brand website for a Canadian-based cyber security firm, enhancing their credibility and strengthening their online identity.",
-          image: "/0day.png"
+          image: "/0day.png",
+          link: "https://www.0daysecurity.io"
         },
         {
           title: "Car Rental Application",
@@ -24,17 +26,21 @@ const OurWork = () => {
         {
           title: "Veterinary Clinic",
           description: "Developed an engaging website for a veterinary clinic, improving client interaction and driving greater customer engagement.",
-          image: "/polaris.png"
+          image: "/polaris.png",
+          link: "https://www.polarisVetConsult.com.ng"
+          
         },
         {
           title: "Drone Logistics Company",
           description: "Engineered a comprehensive full-stack dashboard for a drone logistics company, empowering them to efficiently manage operations and customer relationships.",
-          image: "/flysmart.png"
+          image: "/flysmart.png",
+          link: "https://www.flysmartapp.in"
         },
         {
           title: "Tech Startup",
           description: "Launched a dynamic brand website for a tech startup, amplifying their market presence and supporting their growth ambitions.",
-          image: "/reispar.png"
+          image: "/reispar.png",
+          link: "https://www.reispartechnologies.com"
         },
         {
           title: "Social Media Application",
@@ -63,6 +69,7 @@ const OurWork = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.5, delay: index * 0.2}}
                 viewport={{once: true}}
+                onClick={() => work.link && window.open(work.link, '_blank')}
 
                 key={index} className="hover:scale-102 duration-500 transition-all cursor-pointer" >
                     <img src={work.image} className="w-full rounded-xl h-[154px] object-cover" alt="" />

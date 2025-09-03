@@ -55,10 +55,10 @@ const App = () => {
       <Footer theme={theme} />
 
       {/* Custom cursor ring */}
-      <div ref={outlineRef} className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]" style={{transition: `transform 0.1s ease-in-out`,}}></div>
+      <div ref={outlineRef} className="fixed hidden lg:block top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]" style={{transition: `transform 0.1s ease-in-out`,}}></div>
 
       {/* Custom cursor dot */}
-      <div ref={dotRef} className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]"></div>
+      <div ref={dotRef} className="fixed hidden lg:block top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]"></div>
     </div>
   )
 }
