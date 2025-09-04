@@ -8,7 +8,7 @@ const OurWork = () => {
     const workData = [
         {
           title: "Health and Wellness Technology Company",
-          description: "Designed and developed a modern website to elevate the digital presence and showcase the innovative services of a leading health and wellness technology company.",
+          description: "Developed a modern landing page for a website to elevate the digital presence and showcase the innovative services of a leading health and wellness technology company.",
           image: "/anywherehealing.png",
           link: "https://anywherehealing.com/"
         },
